@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* style */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(65, 65, 65);
+}
+
+.header{
+    height: 70px;
+    width: 100%;
+    background: rgb(245, 245, 245);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: fixed;
+}
+
+.header img{
+    height: 30px;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+nav ul {
+    float: right;
+    display: flex;
+    margin-right: 90px;
+}
+
+nav ul li {
+    padding: 0px 30px;
+    margin-top: -25px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+nav ul li a:hover{
+    color: rgb(150, 150, 150);
+}
+
+.contents{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.top img{
+    width: 40%;
+    margin-top: 80px;
+    /* float:right; */
+    margin-left: 30%;
+    margin-right: auto;
+}
+
+.middle{
+    margin-top: 30px;
+    margin-bottom: 120px;
+}
+.middle-item{
+    float: left;
+    text-align: center;
+}
+.middle-item p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+}
+.middle-item img{
+    width: 449px;
+    padding: 20px;
+}
+
+.bottom{
+    margin: 40px;
+    
+}
+.bottom h1{
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+}
+.bottom p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: rgb(104, 104, 104);
+}
+.bottom h3{
+    text-align: center;
+    color: rgb(66, 66, 66);
+    font-size: 18px;
+}
+
+.bottom .product1 .product-item{
+    float: left;
+}
+
+.bottom .product1 .product-item img{
+    height: 550px;
+    padding: 20px;
+}
+
+.bottom .product2 .product-item{
+    float: left;
+}
+
+.bottom .product2 .product-item img{
+    height: 550px;
+    padding: 20px;
+}
+
+.footer {
+    margin-top: 100px;
+    width: 100%;
+    padding: 40px 15%;
+    background: #DCDCDC;
+    color: rgb(43, 43, 43);
+    display: flex;
+}
+
+.footer div{
+    text-align: center;
+}
+
+.col-2{
+    flex-grow: 2;
+}
+.footer div h3{
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+form input{
+    width: 400px;
+    height: 45px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    outline: none;
+    border: none;
+}
+
+form button{
+    background-color: transparent;
+    border: 2px solid rgb(156, 156, 156);
+    color: rgb(156, 156, 156);
+    border-radius: 30px;
+    padding: 10px 30px;
+}
+
+
+/* clearfix */
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
